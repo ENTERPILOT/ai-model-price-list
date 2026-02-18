@@ -1,0 +1,30 @@
+{
+  "fetched_at": "2026-02-18T10:04:08Z",
+  "sources": {
+    "litellm": {
+      "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+      "file": "litellm_model_prices.json",
+      "license": "MIT"
+    },
+    "portkey": {
+      "url": "https://configs.portkey.ai/pricing/{provider}.json",
+      "directory": "portkey/",
+      "license": "MIT"
+    },
+    "pydantic_genai_prices": {
+      "url": "https://raw.githubusercontent.com/pydantic/genai-prices/main/prices/data.json",
+      "file": "pydantic_genai_prices.json",
+      "license": "MIT"
+    },
+    "openrouter": {
+      "url": "https://openrouter.ai/api/v1/models",
+      "file": "openrouter_models.json",
+      "license": "unspecified"
+    },
+    "llm_prices": {
+      "url": "https://www.llm-prices.com/current-v1.json",
+      "file": "llm_prices_current.json",
+      "license": "unspecified"
+    }
+  }
+}
