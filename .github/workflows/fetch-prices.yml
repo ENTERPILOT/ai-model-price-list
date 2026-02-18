@@ -1,0 +1,110 @@
+name: Fetch AI Model Prices
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create sources directory
+        run: mkdir -p sources/portkey
+
+      - name: Fetch LiteLLM pricing data
+        run: |
+          curl -sSfL --retry 3 --retry-delay 5 \
+            -o sources/litellm_model_prices.json \
+            "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+          echo "litellm: $(wc -c < sources/litellm_model_prices.json) bytes"
+
+      - name: Fetch Portkey pricing data
+        run: |
+          providers=("openai" "anthropic" "google" "groq" "xai" "azure-openai" "bedrock" "mistral-ai" "deepseek" "together-ai" "cohere" "fireworks-ai" "ollama")
+          for provider in "${providers[@]}"; do
+            if curl -sSfL --retry 3 --retry-delay 5 \
+              -o "sources/portkey/${provider}.json" \
+              "https://configs.portkey.ai/pricing/${provider}.json" 2>/dev/null; then
+              echo "portkey/${provider}: $(wc -c < "sources/portkey/${provider}.json") bytes"
+            else
+              echo "portkey/${provider}: SKIPPED (not available)"
+              rm -f "sources/portkey/${provider}.json"
+            fi
+          done
+
+      - name: Fetch Pydantic genai-prices data
+        run: |
+          curl -sSfL --retry 3 --retry-delay 5 \
+            -o sources/pydantic_genai_prices.json \
+            "https://raw.githubusercontent.com/pydantic/genai-prices/main/prices/data.json"
+          echo "pydantic: $(wc -c < sources/pydantic_genai_prices.json) bytes"
+
+      - name: Fetch OpenRouter models data
+        run: |
+          curl -sSfL --retry 3 --retry-delay 5 \
+            -o sources/openrouter_models.json \
+            "https://openrouter.ai/api/v1/models"
+          echo "openrouter: $(wc -c < sources/openrouter_models.json) bytes"
+
+      - name: Fetch llm-prices data
+        run: |
+          curl -sSfL --retry 3 --retry-delay 5 \
+            -o sources/llm_prices_current.json \
+            "https://www.llm-prices.com/current-v1.json"
+          echo "llm-prices: $(wc -c < sources/llm_prices_current.json) bytes"
+
+      - name: Write fetch metadata
+        run: |
+          cat > sources/fetch_metadata.json <<'METAEOF'
+          {
+            "fetched_at": "TIMESTAMP_PLACEHOLDER",
+            "sources": {
+              "litellm": {
+                "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+                "file": "litellm_model_prices.json",
+                "license": "MIT"
+              },
+              "portkey": {
+                "url": "https://configs.portkey.ai/pricing/{provider}.json",
+                "directory": "portkey/",
+                "license": "MIT"
+              },
+              "pydantic_genai_prices": {
+                "url": "https://raw.githubusercontent.com/pydantic/genai-prices/main/prices/data.json",
+                "file": "pydantic_genai_prices.json",
+                "license": "MIT"
+              },
+              "openrouter": {
+                "url": "https://openrouter.ai/api/v1/models",
+                "file": "openrouter_models.json",
+                "license": "unspecified"
+              },
+              "llm_prices": {
+                "url": "https://www.llm-prices.com/current-v1.json",
+                "file": "llm_prices_current.json",
+                "license": "unspecified"
+              }
+            }
+          }
+          METAEOF
+          sed -i "s/TIMESTAMP_PLACEHOLDER/$(date -u +%Y-%m-%dT%H:%M:%SZ)/" sources/fetch_metadata.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes detected, skipping commit."
+          else
+            git commit -m "chore: update pricing data $(date -u +%Y-%m-%d)"
+            git push
+          fi
