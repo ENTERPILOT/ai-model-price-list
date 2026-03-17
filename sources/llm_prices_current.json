@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05",
+  "updated_at": "2026-03-17",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -720,6 +720,22 @@
       "input": 60.0,
       "output": 270.0,
       "input_cached": null
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "vendor": "openai",
+      "name": "GPT-5.4 Mini",
+      "input": 0.75,
+      "output": 4.5,
+      "input_cached": 0.075
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "vendor": "openai",
+      "name": "GPT-5.4 Nano",
+      "input": 0.2,
+      "output": 1.25,
+      "input_cached": 0.02
     },
     {
       "id": "grok-3",
