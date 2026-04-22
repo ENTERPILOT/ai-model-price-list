@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02",
+  "updated_at": "2026-04-21",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -616,6 +616,22 @@
       "input": 2,
       "output": 8,
       "input_cached": 0.2
+    },
+    {
+      "id": "gpt-image-2-image",
+      "vendor": "openai",
+      "name": "gpt-image-2 (image gen) image tokens",
+      "input": 8,
+      "output": 30,
+      "input_cached": 2
+    },
+    {
+      "id": "gpt-image-2-text",
+      "vendor": "openai",
+      "name": "gpt-image-2 (image gen) text tokens",
+      "input": 5,
+      "output": 10,
+      "input_cached": 1.25
     },
     {
       "id": "gpt-5-pro",
