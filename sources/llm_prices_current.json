@@ -122,6 +122,22 @@
       "input_cached": null
     },
     {
+      "id": "deepseek-v4-flash",
+      "vendor": "deepseek",
+      "name": "DeepSeek-V4-Flash",
+      "input": 0.14,
+      "output": 0.28,
+      "input_cached": 0.028
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "vendor": "deepseek",
+      "name": "DeepSeek-V4-Pro",
+      "input": 1.74,
+      "output": 3.48,
+      "input_cached": 0.145
+    },
+    {
       "id": "deepseek-chat",
       "vendor": "deepseek",
       "name": "DeepSeek Chat",
