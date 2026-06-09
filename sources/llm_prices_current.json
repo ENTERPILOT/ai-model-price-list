@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-19",
+  "updated_at": "2026-06-09",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -119,6 +119,46 @@
       "name": "Claude Opus 4.5",
       "input": 5,
       "output": 25,
+      "input_cached": null
+    },
+    {
+      "id": "claude-opus-4-6",
+      "vendor": "anthropic",
+      "name": "Claude Opus 4.6",
+      "input": 5,
+      "output": 25,
+      "input_cached": null
+    },
+    {
+      "id": "claude-opus-4-7",
+      "vendor": "anthropic",
+      "name": "Claude Opus 4.7",
+      "input": 5,
+      "output": 25,
+      "input_cached": null
+    },
+    {
+      "id": "claude-opus-4-8",
+      "vendor": "anthropic",
+      "name": "Claude Opus 4.8",
+      "input": 5,
+      "output": 25,
+      "input_cached": null
+    },
+    {
+      "id": "claude-fable-5",
+      "vendor": "anthropic",
+      "name": "Claude Fable 5",
+      "input": 10,
+      "output": 50,
+      "input_cached": null
+    },
+    {
+      "id": "claude-mythos-5",
+      "vendor": "anthropic",
+      "name": "Claude Mythos 5",
+      "input": 10,
+      "output": 50,
       "input_cached": null
     },
     {
