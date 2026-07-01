@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26",
+  "updated_at": "2026-06-30",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -95,6 +95,14 @@
       "name": "Claude Sonnet 4 and 4.5 >200k",
       "input": 6,
       "output": 22.5,
+      "input_cached": null
+    },
+    {
+      "id": "claude-sonnet-5",
+      "vendor": "anthropic",
+      "name": "Claude Sonnet 5",
+      "input": 2,
+      "output": 10,
       "input_cached": null
     },
     {
