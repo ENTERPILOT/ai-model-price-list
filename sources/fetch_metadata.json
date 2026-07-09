@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-09T09:50:16Z",
+  "fetched_at": "2026-07-09T15:16:24Z",
   "sources": {
     "litellm": {
       "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
