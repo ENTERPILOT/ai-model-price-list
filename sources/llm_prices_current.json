@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30",
+  "updated_at": "2026-07-09",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -375,6 +375,14 @@
       "name": "Gemini 3.5 Flash",
       "input": 1.5,
       "output": 9,
+      "input_cached": 0.15
+    },
+    {
+      "id": "muse-spark-1.1",
+      "vendor": "meta-ai",
+      "name": "Muse Spark 1.1",
+      "input": 1.25,
+      "output": 4.25,
       "input_cached": 0.15
     },
     {
