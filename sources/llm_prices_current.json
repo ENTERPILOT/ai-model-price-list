@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13",
+  "updated_at": "2026-08-22",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -685,8 +685,8 @@
       "id": "o3",
       "vendor": "openai",
       "name": "o3",
-      "input": 10,
-      "output": 40,
+      "input": 2,
+      "output": 8,
       "input_cached": 0.5
     },
     {
@@ -909,17 +909,17 @@
       "id": "gpt-5.6-sol",
       "vendor": "openai",
       "name": "GPT-5.6 Sol ≤272k",
-      "input": 5.0,
-      "output": 30.0,
-      "input_cached": 0.5
+      "input": 4.0,
+      "output": 20.0,
+      "input_cached": 0.4
     },
     {
       "id": "gpt-5.6-sol-272k",
       "vendor": "openai",
       "name": "GPT-5.6 Sol >272k",
-      "input": 10.0,
-      "output": 45.0,
-      "input_cached": 1.0
+      "input": 8.0,
+      "output": 30.0,
+      "input_cached": 0.8
     },
     {
       "id": "gpt-5.6-terra",
@@ -952,6 +952,62 @@
       "input": 0.4,
       "output": 1.8,
       "input_cached": 0.04
+    },
+    {
+      "id": "gpt-5.6-cyber",
+      "vendor": "openai",
+      "name": "GPT-5.6 Cyber",
+      "input": 12.5,
+      "output": 75.0,
+      "input_cached": 1.25
+    },
+    {
+      "id": "gpt-5.5-cyber",
+      "vendor": "openai",
+      "name": "GPT-5.5 Cyber",
+      "input": 12.5,
+      "output": 75.0,
+      "input_cached": 1.25
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "vendor": "openai",
+      "name": "GPT-5.3 Codex",
+      "input": 1.75,
+      "output": 14.0,
+      "input_cached": 0.175
+    },
+    {
+      "id": "gpt-5-search-api",
+      "vendor": "openai",
+      "name": "GPT-5 Search API",
+      "input": 1.25,
+      "output": 10.0,
+      "input_cached": 0.125
+    },
+    {
+      "id": "chat-latest",
+      "vendor": "openai",
+      "name": "ChatGPT Latest (chat-latest)",
+      "input": 5.0,
+      "output": 30.0,
+      "input_cached": 0.5
+    },
+    {
+      "id": "gpt-image-1.5-image",
+      "vendor": "openai",
+      "name": "gpt-image-1.5 (image gen) image tokens",
+      "input": 8,
+      "output": 32,
+      "input_cached": 2
+    },
+    {
+      "id": "gpt-image-1.5-text",
+      "vendor": "openai",
+      "name": "gpt-image-1.5 (image gen) text tokens",
+      "input": 5,
+      "output": 10,
+      "input_cached": 1.25
     },
     {
       "id": "qwen3.6-plus",
