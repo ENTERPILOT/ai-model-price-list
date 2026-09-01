@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-09-01",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -39,7 +39,7 @@
       "name": "Claude 3.7 Sonnet",
       "input": 3,
       "output": 15,
-      "input_cached": null
+      "input_cached": 0.3
     },
     {
       "id": "claude-3.5-sonnet",
@@ -47,7 +47,7 @@
       "name": "Claude 3.5 Sonnet",
       "input": 3,
       "output": 15,
-      "input_cached": null
+      "input_cached": 0.3
     },
     {
       "id": "claude-3-opus",
@@ -55,7 +55,7 @@
       "name": "Claude 3 Opus",
       "input": 15,
       "output": 75,
-      "input_cached": null
+      "input_cached": 1.5
     },
     {
       "id": "claude-3-haiku",
@@ -63,7 +63,7 @@
       "name": "Claude 3 Haiku",
       "input": 0.25,
       "output": 1.25,
-      "input_cached": null
+      "input_cached": 0.025
     },
     {
       "id": "claude-3.5-haiku",
@@ -71,7 +71,7 @@
       "name": "Claude 3.5 Haiku",
       "input": 0.8,
       "output": 4,
-      "input_cached": null
+      "input_cached": 0.08
     },
     {
       "id": "claude-4.5-haiku",
@@ -79,7 +79,7 @@
       "name": "Claude 4.5 Haiku",
       "input": 1,
       "output": 5,
-      "input_cached": null
+      "input_cached": 0.1
     },
     {
       "id": "claude-sonnet-4.5",
@@ -87,7 +87,7 @@
       "name": "Claude Sonnet 4 and 4.5 ≤200k",
       "input": 3,
       "output": 15,
-      "input_cached": null
+      "input_cached": 0.3
     },
     {
       "id": "claude-sonnet-4.5-200k",
@@ -95,7 +95,7 @@
       "name": "Claude Sonnet 4 and 4.5 >200k",
       "input": 6,
       "output": 22.5,
-      "input_cached": null
+      "input_cached": 0.6
     },
     {
       "id": "claude-sonnet-5",
@@ -103,7 +103,7 @@
       "name": "Claude Sonnet 5",
       "input": 2,
       "output": 10,
-      "input_cached": null
+      "input_cached": 0.2
     },
     {
       "id": "claude-opus-4",
@@ -111,7 +111,7 @@
       "name": "Claude Opus 4",
       "input": 15,
       "output": 75,
-      "input_cached": null
+      "input_cached": 1.5
     },
     {
       "id": "claude-opus-4-1",
@@ -119,7 +119,7 @@
       "name": "Claude Opus 4.1",
       "input": 15,
       "output": 75,
-      "input_cached": null
+      "input_cached": 1.5
     },
     {
       "id": "claude-opus-4-5",
@@ -127,7 +127,7 @@
       "name": "Claude Opus 4.5",
       "input": 5,
       "output": 25,
-      "input_cached": null
+      "input_cached": 0.5
     },
     {
       "id": "claude-opus-4-6",
@@ -135,7 +135,7 @@
       "name": "Claude Opus 4.6",
       "input": 5,
       "output": 25,
-      "input_cached": null
+      "input_cached": 0.5
     },
     {
       "id": "claude-opus-4-7",
@@ -143,7 +143,7 @@
       "name": "Claude Opus 4.7",
       "input": 5,
       "output": 25,
-      "input_cached": null
+      "input_cached": 0.5
     },
     {
       "id": "claude-opus-4-8",
@@ -151,7 +151,7 @@
       "name": "Claude Opus 4.8",
       "input": 5,
       "output": 25,
-      "input_cached": null
+      "input_cached": 0.5
     },
     {
       "id": "claude-fable-5",
@@ -159,7 +159,15 @@
       "name": "Claude Fable 5",
       "input": 10,
       "output": 50,
-      "input_cached": null
+      "input_cached": 1
+    },
+    {
+      "id": "claude-fable-5-1",
+      "vendor": "anthropic",
+      "name": "Claude Fable 5.1",
+      "input": 10,
+      "output": 50,
+      "input_cached": 0.25
     },
     {
       "id": "claude-mythos-5",
@@ -167,7 +175,7 @@
       "name": "Claude Mythos 5",
       "input": 10,
       "output": 50,
-      "input_cached": null
+      "input_cached": 1
     },
     {
       "id": "deepseek-v4-flash",
