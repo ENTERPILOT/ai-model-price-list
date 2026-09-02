@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -397,6 +397,14 @@
       "id": "gemini-3.7-flash",
       "vendor": "google",
       "name": "Gemini 3.7 Flash",
+      "input": 0.75,
+      "output": 3.75,
+      "input_cached": 0.075
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "vendor": "google",
+      "name": "Gemini 3.8 Flash",
       "input": 0.75,
       "output": 3.75,
       "input_cached": 0.075
