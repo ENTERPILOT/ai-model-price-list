@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-04",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -984,6 +984,22 @@
       "input": 0.4,
       "output": 1.8,
       "input_cached": 0.04
+    },
+    {
+      "id": "gpt-6-astra",
+      "vendor": "openai",
+      "name": "GPT-6 Astra ≤272k",
+      "input": 10.0,
+      "output": 50.0,
+      "input_cached": 1.0
+    },
+    {
+      "id": "gpt-6-astra-272k",
+      "vendor": "openai",
+      "name": "GPT-6 Astra >272k",
+      "input": 20.0,
+      "output": 75.0,
+      "input_cached": 2.0
     },
     {
       "id": "gpt-5.6-cyber",
