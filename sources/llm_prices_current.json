@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -1056,6 +1056,22 @@
       "input": 0.2,
       "output": 0.75,
       "input_cached": 0.02
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "vendor": "openai",
+      "name": "GPT-6.1 Sol ≤272k",
+      "input": 2.0,
+      "output": 10.0,
+      "input_cached": 0.1
+    },
+    {
+      "id": "gpt-6.1-sol-272k",
+      "vendor": "openai",
+      "name": "GPT-6.1 Sol >272k",
+      "input": 4.0,
+      "output": 15.0,
+      "input_cached": 0.2
     },
     {
       "id": "gpt-5.6-cyber",
