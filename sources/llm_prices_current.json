@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-13",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -488,6 +488,14 @@
       "input": 0.3,
       "output": 2.5,
       "input_cached": 0.03
+    },
+    {
+      "id": "gemini-4-argon",
+      "vendor": "google",
+      "name": "Gemini 4 Argon",
+      "input": 2,
+      "output": 10,
+      "input_cached": 0.1
     },
     {
       "id": "muse-spark-1.3-contributor",
