@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-23",
   "prices": [
     {
       "id": "amazon-nova-micro",
@@ -696,6 +696,54 @@
       "input": 1.15,
       "output": 8.0,
       "input_cached": 0.15
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K3.1 Pro",
+      "input": 2,
+      "output": 10,
+      "input_cached": 0.2
+    },
+    {
+      "id": "kimi-k3.1-pro-highspeed",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K3.1 Pro Highspeed",
+      "input": 4,
+      "output": 20,
+      "input_cached": 0.2
+    },
+    {
+      "id": "kimi-k3",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K3",
+      "input": 3,
+      "output": 15,
+      "input_cached": 0.3
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K2.7 Code",
+      "input": 0.95,
+      "output": 4,
+      "input_cached": null
+    },
+    {
+      "id": "kimi-k2.7-code-highspeed",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K2.7 Code Highspeed",
+      "input": 1.9,
+      "output": 8,
+      "input_cached": null
+    },
+    {
+      "id": "kimi-k2.6",
+      "vendor": "moonshot-ai",
+      "name": "Kimi K2.6",
+      "input": 0.95,
+      "output": 4,
+      "input_cached": null
     },
     {
       "id": "text-davinci-003",
