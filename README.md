@@ -12,7 +12,8 @@ All pricing data is stored in the `sources/` directory.
 |---|---|---|---|
 | `sources/litellm_model_prices.json` | [LiteLLM](https://github.com/BerriAI/litellm) | USD per token | MIT |
 | `sources/portkey/*.json` | [Portkey-AI](https://github.com/Portkey-AI/models) | Cents per token | MIT |
-| `sources/pydantic_genai_prices.json` | [pydantic/genai-prices](https://github.com/pydantic/genai-prices) | USD per token | MIT |
+| `sources/pydantic_genai_prices_v2.json` | [pydantic/genai-prices](https://github.com/pydantic/genai-prices) (v2 feed) | USD per million tokens | MIT |
+| `sources/pydantic_genai_prices.json` | [pydantic/genai-prices](https://github.com/pydantic/genai-prices) (v1, frozen upstream since 2026-07-25, no longer updated) | USD per million tokens | MIT |
 | `sources/openrouter_models.json` | [OpenRouter](https://openrouter.ai/docs) | USD per token (string) | Unspecified |
 | `sources/llm_prices_current.json` | [llm-prices](https://github.com/simonw/llm-prices) | USD per million tokens | Unspecified |
 
